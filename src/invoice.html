@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <title>Document</title>
+  </head>
+  <body class="w-screen h-screen">
+    <header class="w-full h-20">
+      <nav class="w-1/2 mx-auto flex flex-row justify-center">
+        <h1 class="text-2xl italic">TRANSPORT</h1>
+      </nav>
+    </header>
+    <main class="w-full h-full max-w-full">
+      <article
+        class="grid grid-cols-2 lg:grid-cols-2 w-full px-6 place-content-center h-auto"
+      >
+        <section class="flex flex-col gap-3">
+          <h2 class="uppercase opacity-70">INVOICE TO</h2>
+          <input
+            type="text"
+            aria-label="invoice to"
+            id="invoice-to"
+            placeholder="Reciepient's name"
+            class="border-none outline-none py-3 text-3xl font-bold"
+          />
+          <div class="flex gap-4 items-center">
+            <i class="fa fa-location-dot fa-lg text-purple-500"></i>
+            <input
+              type="text"
+              name="location"
+              id="location"
+              aria-label="reciepient's location"
+              class="border-none outline-none opacity-60"
+              placeholder="reciepient's location"
+            />
+          </div>
+          <div class="flex gap-4 items-center">
+            <i class="fa fa-phone fa-lg text-purple-500"></i>
+            <input type="number" name="reciepient number id="reciepent_number"
+            aria-label="reciepient's phone number " class="border-none
+            outline-none opacity-60" placeholder="reciepient's location" />
+          </div>
+        </section>
+
+        <section class="flex flex-col gap-3 w-full">
+          <h2 class="uppercase text-4xl text-purple-600">INVOICE</h2>
+          <div class="flex gap-4 items-center">
+            <label for="invoice_id" class="text-[1.2rem] opacity-60"
+              >INVOICE ID :</label
+            >
+            <input
+              type="text"
+              name="invoice id"
+              id="invoice_id"
+              aria-label="invoice id"
+              class="border-none outline-none opacity-60 text-[1.2rem]"
+              placeholder="invoice id"
+            />
+          </div>
+
+          <div class="flex gap-4 items-center">
+            <label for="invoice_id" class="text-[1.2rem] opacity-60"
+              >DATE :</label
+            >
+            <input
+              type="text"
+              name="invoice id"
+              id="invoice_id"
+              aria-label="invoice id"
+              class="border-none outline-none opacity-60 text-[1.2rem]"
+              placeholder="invoice id"
+            />
+          </div>
+        </section>
+      </article>
+      <table class="w-fullpy-3">
+        <thead class="text-purple-600">
+          <tr>
+            <th class="px-4 py-2">TRACKING ID</th>
+            <th class="px-4 py-2">RECIPIENT ADDRESS</th>
+            <th class="px-4 py-2">RECIPIENT</th>
+            <th class="px-4 py-2">CONTENT</th>
+            <th class="px-4 py-2">QTY</th>
+          </tr>
+        </thead>
+        <tbody class="bg-gray-100 py-6">
+          <tr>
+            <td class="px-4 py-2">
+              <input
+                type="text"
+                class="bg-transparent outline-none w-full"
+                aria-label="tracing id"
+                placeholder="tracing id"
+              />
+            </td>
+            <td class="px-4 py-2">
+              <input
+                type="text"
+                class="bg-transparent outline-none w-full"
+                aria-label="reciepient address"
+                placeholder="address"
+              />
+            </td>
+            <td class="px-4 py-2">
+              <input
+                type="text"
+                class="bg-transparent outline-none w-full"
+                aria-label="reciepient"
+                placeholder="reciepient"
+              />
+            </td>
+            <td class="px-4 py-2">
+              <input
+                type="text"
+                class="bg-transparent outline-none w-full"
+                aria-label="content"
+                placeholder="content"
+              />
+            </td>
+            <td class="px-4 py-2">
+              <input
+                type="text"
+                class="bg-transparent outline-none w-full"
+                aria-label="QTY"
+                placeholder="qty"
+              />
+            </td>
+          </tr>
+          <!-- add more rows as needed -->
+        </tbody>
+      </table>
+      <section class="flex gap-6 flex-col ml-auto w-[40%]">
+        <div class="flex gap-3">
+          <label for="shipping_fee" class="opacity-70 text-[1.2rem]"
+            >Shipping fee</label
+          >
+          <input
+            type="number"
+            aria-label="shipping fee"
+            class="border-none outline-none text-[1.2rem]"
+          />
+        </div>
+
+        <div class="flex gap-3">
+          <label for="processing_fee" class="opacity-70 text-[1.2rem]"
+            >Processing fee</label
+          >
+          <input
+            type="number"
+            aria-label="processing fee"
+            class="border-none outline-none text-[1.2rem]"
+          />
+        </div>
+
+        <div class="flex gap-3 shadow-md">
+          <label for="TAX" class="opacity-70 text-[1.2rem]">TAX</label>
+          <input
+            type="number"
+            aria-label="TAX"
+            class="border-none outline-none text-[1.2rem]"
+          />
+        </div>
+
+        <div class="flex gap-3">
+          <label for="Grand Total" class="opacity-70 text-[1.2rem]"
+            >Grand Total</label
+          >
+          <input
+            type="number"
+            aria-label="Grand Total"
+            class="border-none outline-none text-[1.2rem]"
+          />
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://kit.fontawesome.com/0d7fe2ea78.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
